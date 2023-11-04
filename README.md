@@ -75,5 +75,49 @@ df["tip_percent"]=df["tip"] / df["total_bill"]
 sns.scatterplot(x=df['size'], y=df['tip_percent'],data=df)
 plt.title("Tip Percentage by Dining Party Size")
 ```
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex-09/assets/113497666/4085d4bc-241e-4973-9813-bc29626a392f)
+
+```python
+sns.histplot(data=df, x="total_bill", hue="time", element="step", stat="density")
+plt.title("Distribution of Total Bill Amounts by Time of Day")
+plt.show()
+```
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex-09/assets/113497666/47919b29-5e6e-4308-8a4d-98083c7b19a3)
+
+```python
+sns.barplot(x=df["size"],y=df["total_bill"],hue=df["size"])
+plt.title("average total bill amount by dinning party size")
+```
+
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex-09/assets/113497666/4bd6acc6-8e1a-409f-8d3c-2d49ca2e8cf1)
+
+```python
+sns.boxplot(x="day", y="tip", data=df)
+plt.title("Tip Amount by Day of Week")
+plt.show()
+```
+
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex-09/assets/113497666/b1c6df4a-22d5-4fed-9388-b84e2132260d)
+
+```python
+sns.violinplot(x="time",y="tip",data=df)
+plt.title("tip amount time of day")
+```
+
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex-09/assets/113497666/7cab0f15-e453-4c2d-bd9c-f2c5519d3ce0)
+
+```python
+sns.scatterplot(x="total_bill",y="tip",data=df)
+plt.title("Correlation between Tip Amount and Total Bill Amount")
+plt.show()
+```
+
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex-09/assets/113497666/b7f0e4ab-e0df-4632-92b3-bd1730ea87fb)
+
+# RESULT:
+Thus, Data Visualization on a complex dataset and save the data to a file has been performed successfully.
+
+
+
 
 
